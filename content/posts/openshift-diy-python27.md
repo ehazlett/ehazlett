@@ -1,6 +1,6 @@
 Date: 2012-05-15
 Title: OpenShift: DIY Python2.7
-Tags: [openshift, python]
+Tags: openshift, python
 
 ## Preface
 
