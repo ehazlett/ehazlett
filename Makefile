@@ -40,21 +40,26 @@ html: clean $(OUTPUTDIR)/index.html
 	@echo 'Done'
 
 $(OUTPUTDIR)/%.html:
+	mkdir -p $(OUTPUTDIR)
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
+	mkdir -p $(OUTPUTDIR)
 	find $(OUTPUTDIR) -mindepth 1 -delete
 
 regenerate: clean
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 serve:
+	mkdir -p $(OUTPUTDIR)
 	cd $(OUTPUTDIR) && python -m SimpleHTTPServer
 
 devserver:
+	mkdir -p $(OUTPUTDIR)
 	$(BASEDIR)/develop_server.sh restart
 
 publish:
+	mkdir -p $(OUTPUTDIR)
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 ssh_upload: publish

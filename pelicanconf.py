@@ -17,5 +17,7 @@ LINKS = []
 SOCIAL = []
 # Social widget
 #SOCIAL = (('twitter.com/ehazlett', '1'),)
+# HACK to prevent git from complaining on build
+FILES_TO_COPY = (('extra/placeholder', 'placeholder'),)
 
 DEFAULT_PAGINATION = 10
