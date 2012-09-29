@@ -1,0 +1,13 @@
+---
+applications:
+  .:
+    name: ehazlett
+    framework:
+      name: sinatra
+      info:
+        mem: 128M
+        description: Sinatra Application
+        exec: ruby web.rb
+    url: ${name}.${target-base}
+    mem: 128M
+    instances: 1
