@@ -1,3 +1,4 @@
+Date: 2012-06-01
 Title: about
 
 I've been doing system administration for over 10 years.  I am mostly in the cloud these days running and managing Linux-based systems in a range of providers from Amazon to Rackspace to my own OpenStack implementation.  I am a <a href="https://www.redhat.com/wapps/training/certification/verify.html?certNumber=805010760349865&amp;verify=Verify" target="_rh">RedHat Certified Engineer</a> with experience in many different distributions including RedHat, Debian, Ubuntu, and Arch Linux.

@@ -1,7 +1,7 @@
 ---
 applications:
   .:
-    name: ehazlett
+    name: ehazlett-draft
     framework:
       name: sinatra
       info:
